@@ -1,6 +1,5 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
 <h3 align="center"> Distributed Architecture Diagram</h3>
@@ -12,7 +11,7 @@
 <p align="center"> Designing Distributed Architecture Diagram using plantUML code
     <br> 
 </p>
-<img href="">
+<img href="https://github.com/Wawerugeek/Teaching-Tutorials/blob/main/Ditributed_system_architecture_tutorial/system.png">
 ![Alt Text](image_url)
 
 
