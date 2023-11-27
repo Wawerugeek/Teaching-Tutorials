@@ -11,13 +11,12 @@
 <p align="center"> Designing Distributed Architecture Diagram using plantUML code
     <br> 
 </p>
-<img href="https://github.com/Wawerugeek/Teaching-Tutorials/blob/main/Ditributed_system_architecture_tutorial/system.png">
-![Alt Text](image_url)
+<img href="https://github.com/Wawerugeek/Teaching-Tutorials/blob/main/Ditributed_system_architecture_tutorial/system.png"> </img>
 
 
 ## 🧐 About <a name = "about"> </a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Designing Distributed Architecture Diagram using plantUML code
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
