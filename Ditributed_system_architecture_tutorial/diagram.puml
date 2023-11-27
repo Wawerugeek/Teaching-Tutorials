@@ -1,0 +1,45 @@
+@startuml system1
+title Distributed Architecture Diagram
+allowmixing
+
+node "Server 1" {
+  package "User Management" {
+    together {
+      class "Students" as Students
+      class "Login Student Health Care App" as Login
+      class "User Profile" as UserProfile
+      class "Update" as Update
+    }
+  }
+}
+
+node "Server 2" {
+  database "Database" as Database << (D,lightsalmon) >>
+}
+
+node "Server 3" {
+  package "Appointment Management" {
+    together {
+      class "Scheduling the Appointment" as Scheduling
+      class "Transaction" as Transaction
+      class "Confirmation & Feedback" as Confirmation
+    }
+  }
+}
+
+Students --> Login : Logs into
+Login --> UserProfile : Loads
+UserProfile --> Update : Updates
+Update --> Database : Records to
+Database --> Scheduling : Fetches data for
+UserProfile --> Scheduling : Schedules
+Scheduling --> Transaction : Initiates
+Transaction --> Database : Records to
+Transaction --> Confirmation : Sends to
+Confirmation --> "Feedback & Results" : Renders
+
+note right of Students : "Students interact with the system through the Login"
+note right of Database : "Stores User Profiles, Records Transactions, Stores Appointments, Student Details"
+note left of Transaction : "Handles all transactions"
+
+@enduml
